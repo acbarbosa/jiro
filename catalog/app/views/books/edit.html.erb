@@ -1,0 +1,14 @@
+<h1>Atualização de Livro</h1>
+<%= form_for :book, url: book_path(@book), method: :patch do |b| %>
+<ul>
+  <li>
+    <%= b.label :title %>
+    <%= b.text_field :title %>
+  </li>
+  <li>
+    <%= b.label :author %>
+    <%= b.text_field :author %>
+  </li>
+</ul>
+<%= b.submit %>
+<% end %>
